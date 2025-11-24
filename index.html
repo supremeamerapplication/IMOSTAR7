@@ -1632,95 +1632,6 @@
             margin-bottom: 10px;
         }
 
-        /* NEW: Pricing Tables */
-        .pricing {
-            padding: 80px 0;
-            background: var(--body-bg);
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .pricing-card {
-            background: var(--card-bg);
-            border-radius: var(--radius);
-            padding: 40px 30px;
-            text-align: center;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .pricing-card.popular {
-            border: 2px solid var(--primary);
-            transform: scale(1.05);
-        }
-
-        .pricing-card.popular::before {
-            content: 'Most Popular';
-            position: absolute;
-            top: 20px;
-            right: -30px;
-            background: var(--primary);
-            color: white;
-            padding: 5px 30px;
-            transform: rotate(45deg);
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        .pricing-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .pricing-card.popular:hover {
-            transform: scale(1.05) translateY(-10px);
-        }
-
-        .pricing-header {
-            margin-bottom: 30px;
-        }
-
-        .pricing-name {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: var(--text-color);
-        }
-
-        .pricing-price {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 5px;
-        }
-
-        .pricing-period {
-            color: var(--text-color);
-            opacity: 0.7;
-        }
-
-        .pricing-features {
-            list-style: none;
-            margin-bottom: 30px;
-        }
-
-        .pricing-features li {
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            color: var(--text-color);
-        }
-
-        .dark-mode .pricing-features li {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
         /* NEW: Chatbot */
         .chatbot {
             position: fixed;
@@ -1994,14 +1905,6 @@
                 width: 300px;
                 height: 400px;
                 right: 10px;
-            }
-
-            .pricing-card.popular {
-                transform: scale(1);
-            }
-
-            .pricing-card.popular:hover {
-                transform: translateY(-10px);
             }
         }
 
@@ -2412,62 +2315,6 @@
                             <button class="btn" style="margin-top: 15px;">View Project</button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NEW: Pricing Section -->
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <div class="section-title">
-                <h2>Pricing Plans</h2>
-            </div>
-            <div class="pricing-grid">
-                <div class="pricing-card scroll-reveal">
-                    <div class="pricing-header">
-                        <h3 class="pricing-name">Starter</h3>
-                        <div class="pricing-price">$299</div>
-                        <div class="pricing-period">per project</div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Logo Design</li>
-                        <li>2 Revisions</li>
-                        <li>Basic Brand Guide</li>
-                        <li>5 Business Days Delivery</li>
-                    </ul>
-                    <button class="btn">Get Started</button>
-                </div>
-                <div class="pricing-card popular scroll-reveal">
-                    <div class="pricing-header">
-                        <h3 class="pricing-name">Professional</h3>
-                        <div class="pricing-price">$599</div>
-                        <div class="pricing-period">per project</div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Complete Brand Identity</li>
-                        <li>Unlimited Revisions</li>
-                        <li>Full Brand Guide</li>
-                        <li>Social Media Kit</li>
-                        <li>7 Business Days Delivery</li>
-                    </ul>
-                    <button class="btn">Get Started</button>
-                </div>
-                <div class="pricing-card scroll-reveal">
-                    <div class="pricing-header">
-                        <h3 class="pricing-name">Enterprise</h3>
-                        <div class="pricing-price">$999</div>
-                        <div class="pricing-period">per project</div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Complete Brand Identity</li>
-                        <li>Unlimited Revisions</li>
-                        <li>Full Brand Guide</li>
-                        <li>Social Media Kit</li>
-                        <li>Website Design</li>
-                        <li>Priority Support</li>
-                    </ul>
-                    <button class="btn">Get Started</button>
                 </div>
             </div>
         </div>
@@ -3076,10 +2923,9 @@
             'hello': 'Hello! How can I help you today?',
             'hi': 'Hi there! What can I do for you?',
             'services': 'I offer Brand Identity, UI/UX Design, Packaging Design, and Illustration services. Which one are you interested in?',
-            'pricing': 'I have three pricing plans: Starter ($299), Professional ($599), and Enterprise ($999). Which one would you like to know more about?',
             'contact': 'You can contact me at imanoniyangi5@gmail.com or call 09127161200. My address is No.57 Aderemi Adeleye street, GRA Ilorin Kwara state.',
             'portfolio': 'You can view my portfolio in the Portfolio section of this website. Would you like me to scroll there for you?',
-            'default': "I'm not sure I understand. Could you please rephrase your question? You can ask me about services, pricing, or contact information."
+            'default': "I'm not sure I understand. Could you please rephrase your question? You can ask me about services, or contact information."
         };
 
         function addMessage(text, isUser = false) {
