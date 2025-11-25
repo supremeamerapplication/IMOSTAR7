@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Ad scripts remain the same -->
     <script async src="https://www.effectivegatecpm.com/m34npu027r?key=bdba74120449ad7de87ae66f79188e6c"></script>
     <script type='text/javascript' src='//pl28059653.effectivegatecpm.com/bd/3b/63/bd3b63a6f57b5a9b19da72cde06194c4.js'></script>
     <script type='text/javascript' src='//pl28102722.effectivegatecpm.com/22/7d/f5/227df5b07629c6b3ed28c836e9b5a0b9.js'></script>
@@ -17,7 +18,7 @@
         };
     </script>
     <script type="text/javascript" src="//www.highperformanceformat.com/4cc5f61d5d2870d4ba525dfe9a4700f7/invoke.js"></script>
-    
+
     <meta name="description" content="IMOSTAR7 - Professional Graphic Designer Portfolio. Transform ideas into visual masterpieces.">
     <meta name="theme-color" content="#4CAF50">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -202,14 +203,14 @@
             to { transform: translateY(0); }
         }
 
-        /* Enhanced Terms Modal */
-        .terms-modal {
+        /* NEW: Privacy & Terms Modal */
+        .privacy-terms-modal {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.85);
+            background: rgba(0, 0, 0, 0.9);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -220,16 +221,16 @@
             backdrop-filter: blur(5px);
         }
 
-        .terms-modal.hidden {
+        .privacy-terms-modal.hidden {
             opacity: 0;
             visibility: hidden;
         }
 
-        .terms-content {
+        .privacy-terms-content {
             background: var(--card-bg);
             padding: 30px;
             border-radius: var(--radius);
-            max-width: 500px;
+            max-width: 600px;
             width: 90%;
             max-height: 80vh;
             overflow-y: auto;
@@ -239,18 +240,18 @@
             border: 1px solid rgba(76, 175, 80, 0.2);
         }
 
-        .terms-modal.hidden .terms-content {
+        .privacy-terms-modal.hidden .privacy-terms-content {
             transform: translateY(-20px);
         }
 
-        .terms-content h2 {
+        .privacy-terms-content h2 {
             margin-bottom: 15px;
             text-align: center;
             color: var(--primary);
             font-size: 1.5rem;
         }
 
-        .terms-text {
+        .privacy-terms-text {
             margin-bottom: 20px;
             max-height: 300px;
             overflow-y: auto;
@@ -261,10 +262,40 @@
             line-height: 1.6;
         }
 
-        .terms-actions {
+        .privacy-terms-actions {
             display: flex;
             flex-direction: column;
             gap: 10px;
+        }
+
+        .privacy-terms-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .privacy-terms-checkbox input {
+            width: 18px;
+            height: 18px;
+        }
+
+        .privacy-terms-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .privacy-terms-links a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .privacy-terms-links a:hover {
+            text-decoration: underline;
         }
 
         /* Enhanced Preloader */
@@ -1090,10 +1121,10 @@
             padding: 20px;
         }
 
-        /* Enhanced Install App Button */
+        /* Enhanced Install App Button - MOVED UP BY 10PX */
         .install-app {
             position: fixed;
-            bottom: 25px;
+            bottom: 35px; /* Changed from 25px to 35px */
             left: 25px;
             width: 50px;
             height: 50px;
@@ -1152,65 +1183,6 @@
 
         .toast.warning {
             background-color: var(--warning);
-        }
-
-        /* NEW: Image Modal */
-        .image-modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 10000;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-
-        .image-modal.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .image-modal-content {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: var(--radius);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            transform: scale(0.8);
-            transition: transform 0.3s ease;
-        }
-
-        .image-modal.active .image-modal-content {
-            transform: scale(1);
-        }
-
-        .image-modal-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: none;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: var(--transition);
-            backdrop-filter: blur(10px);
-        }
-
-        .image-modal-close:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: scale(1.1);
         }
 
         /* NEW: Skills Section */
@@ -1760,7 +1732,7 @@
                 font-size: 2.8rem;
             }
 
-            .terms-actions {
+            .privacy-terms-actions {
                 flex-direction: row;
                 justify-content: center;
             }
@@ -1870,7 +1842,7 @@
             }
 
             .install-app {
-                bottom: 80px;
+                bottom: 90px; /* Adjusted for mobile */
                 left: 20px;
             }
 
@@ -1943,7 +1915,7 @@
                 padding: 20px;
             }
 
-            .terms-content {
+            .privacy-terms-content {
                 padding: 20px;
             }
 
@@ -1956,7 +1928,7 @@
             }
 
             .install-app {
-                bottom: 70px;
+                bottom: 80px; /* Adjusted for mobile */
                 left: 15px;
                 width: 45px;
                 height: 45px;
@@ -1989,12 +1961,27 @@
     <!-- Toast Container -->
     <div class="toast-container" id="toastContainer"></div>
 
-    <!-- Image Modal -->
-    <div class="image-modal" id="imageModal">
-        <button class="image-modal-close" id="imageModalClose">
-            <i class="fas fa-times"></i>
-        </button>
-        <img class="image-modal-content" id="imageModalImg" src="" alt="Portfolio Image">
+    <!-- NEW: Privacy & Terms Modal -->
+    <div class="privacy-terms-modal" id="privacyTermsModal">
+        <div class="privacy-terms-content">
+            <h2>Privacy & Terms Agreement</h2>
+            <div class="privacy-terms-text">
+                <p>Welcome to IMOSTAR7 Design Portfolio. To provide you with the best experience, we need your consent to our Privacy Policy and Terms of Service.</p>
+                <p>By using this website, you agree to our data collection and usage practices as described in our policies. We respect your privacy and are committed to protecting your personal information.</p>
+                <p>Please review our policies and accept them to continue using our website.</p>
+            </div>
+            <div class="privacy-terms-links">
+                <a href="privacy.html" target="_blank">Privacy Policy</a>
+                <a href="terms.html" target="_blank">Terms of Service</a>
+            </div>
+            <div class="privacy-terms-checkbox">
+                <input type="checkbox" id="acceptCheckbox">
+                <label for="acceptCheckbox">I have read and agree to the Privacy Policy and Terms of Service</label>
+            </div>
+            <div class="privacy-terms-actions">
+                <button class="btn" id="acceptPrivacyTerms" disabled>Accept & Continue</button>
+            </div>
+        </div>
     </div>
 
     <!-- NEW: Chatbot -->
@@ -2034,21 +2021,6 @@
         </div>
     </div>
 
-    <!-- Terms Modal -->
-    <div class="terms-modal" id="termsModal">
-        <div class="terms-content">
-            <h2>Terms of Service</h2>
-            <div class="terms-text">
-                <p>Welcome to IMOSTAR7 Design Portfolio. By accessing this website, you agree to be bound by these <a href="privacy.html">privacy policy</a> and 
-                    <a href="terms.html">Terms of Service.</a></p>
-            </div>
-            <div class="terms-actions">
-                <button class="btn" id="acceptTerms">Accept</button>
-                <button class="btn" id="declineTerms" style="background: #888;">Decline</button>
-            </div>
-        </div>
-    </div>
-
     <!-- PWA Install Prompt -->
     <div class="pwa-install-prompt" id="pwaInstallPrompt">
         <div class="prompt-header">
@@ -2073,7 +2045,7 @@
         <div class="preloader-text">Loading IMOSTAR7 Portfolio...</div>
     </div>
 
-    <!-- Install App Button -->
+    <!-- Install App Button - MOVED UP BY 10PX -->
     <div class="install-app" id="installAppButton">
         <i class="fas fa-download"></i>
     </div>
@@ -2597,6 +2569,33 @@
             });
         }
 
+        // NEW: Privacy & Terms Modal
+        const privacyTermsModal = document.getElementById('privacyTermsModal');
+        const acceptPrivacyTerms = document.getElementById('acceptPrivacyTerms');
+        const acceptCheckbox = document.getElementById('acceptCheckbox');
+
+        // Check if user has already accepted terms
+        if (!localStorage.getItem('privacyTermsAccepted')) {
+            privacyTermsModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        } else {
+            privacyTermsModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Enable/disable accept button based on checkbox
+        acceptCheckbox.addEventListener('change', function() {
+            acceptPrivacyTerms.disabled = !this.checked;
+        });
+
+        // Accept terms
+        acceptPrivacyTerms.addEventListener('click', () => {
+            localStorage.setItem('privacyTermsAccepted', 'true');
+            privacyTermsModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+            showToast('Privacy & Terms accepted successfully!', 'success');
+        });
+
         // Enhanced Preloader
         window.addEventListener('load', () => {
             const preloader = document.querySelector('.preloader');
@@ -2624,7 +2623,7 @@
         document.addEventListener('mousemove', (e) => {
             cursor.style.left = e.clientX + 'px';
             cursor.style.top = e.clientY + 'px';
-            
+
             setTimeout(() => {
                 cursorFollower.style.left = e.clientX + 'px';
                 cursorFollower.style.top = e.clientY + 'px';
@@ -2638,11 +2637,11 @@
             toast.className = `toast ${type}`;
             toast.textContent = message;
             toastContainer.appendChild(toast);
-            
+
             setTimeout(() => {
                 toast.classList.add('show');
             }, 100);
-            
+
             setTimeout(() => {
                 toast.classList.remove('show');
                 setTimeout(() => {
@@ -2650,33 +2649,6 @@
                 }, 300);
             }, 3000);
         }
-
-        // Image Modal
-        const imageModal = document.getElementById('imageModal');
-        const imageModalImg = document.getElementById('imageModalImg');
-        const imageModalClose = document.getElementById('imageModalClose');
-
-        document.querySelectorAll('.portfolio-item').forEach(item => {
-            item.addEventListener('click', () => {
-                const bgImage = window.getComputedStyle(item).backgroundImage;
-                const imageUrl = bgImage.replace(/url\(['"]?(.*?)['"]?\)/i, '$1');
-                imageModalImg.src = imageUrl;
-                imageModal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            });
-        });
-
-        imageModalClose.addEventListener('click', () => {
-            imageModal.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        });
-
-        imageModal.addEventListener('click', (e) => {
-            if (e.target === imageModal) {
-                imageModal.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        });
 
         // Skills Animation
         function initSkillsAnimation() {
@@ -2694,7 +2666,7 @@
                 const target = parseInt(stat.getAttribute('data-target'));
                 const increment = target / 100;
                 let current = 0;
-                
+
                 const timer = setInterval(() => {
                     current += increment;
                     if (current >= target) {
@@ -2712,30 +2684,6 @@
             initSkillsAnimation();
             initStatsCounter();
         }
-
-        // Terms of Service Modal
-        const termsModal = document.getElementById('termsModal');
-        const acceptTerms = document.getElementById('acceptTerms');
-        const declineTerms = document.getElementById('declineTerms');
-
-        // Check if user has already accepted terms
-        if (!localStorage.getItem('termsAccepted')) {
-            termsModal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        } else {
-            termsModal.classList.add('hidden');
-        }
-
-        acceptTerms.addEventListener('click', () => {
-            localStorage.setItem('termsAccepted', 'true');
-            termsModal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-            showToast('Terms accepted successfully!', 'success');
-        });
-
-        declineTerms.addEventListener('click', () => {
-            showToast('You must accept the Terms of Service to use this website.', 'error');
-        });
 
         // Theme toggle functionality
         const themeToggle = document.getElementById('theme-toggle');
@@ -2831,10 +2779,10 @@
 
             // Format the message for WhatsApp
             const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
-            
+
             // Open WhatsApp with the pre-filled message
             window.open(`https://wa.me/09127161200?text=${whatsappMessage}`, '_blank');
-            
+
             // Reset the form
             contactForm.reset();
             showToast('Message prepared for WhatsApp!', 'success');
@@ -2879,16 +2827,16 @@
                 const rect = this.getBoundingClientRect();
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
-                
+
                 const centerX = rect.width / 2;
                 const centerY = rect.height / 2;
-                
+
                 const deltaX = (x - centerX) / centerX;
                 const deltaY = (y - centerY) / centerY;
-                
+
                 this.style.transform = `translate(${deltaX * 10}px, ${deltaY * 10}px) scale(1.05)`;
             });
-            
+
             btn.addEventListener('mouseleave', function() {
                 this.style.transform = 'translate(0, 0) scale(1)';
             });
@@ -2939,21 +2887,21 @@
         function processMessage(message) {
             const lowerMessage = message.toLowerCase();
             let response = botResponses.default;
-            
+
             for (const key in botResponses) {
                 if (lowerMessage.includes(key)) {
                     response = botResponses[key];
                     break;
                 }
             }
-            
+
             // Special actions
             if (lowerMessage.includes('portfolio')) {
                 setTimeout(() => {
                     document.querySelector('#portfolio').scrollIntoView({ behavior: 'smooth' });
                 }, 1000);
             }
-            
+
             return response;
         }
 
@@ -2962,7 +2910,7 @@
             if (message) {
                 addMessage(message, true);
                 chatbotInput.value = '';
-                
+
                 setTimeout(() => {
                     const response = processMessage(message);
                     addMessage(response);
@@ -2978,7 +2926,7 @@
 
         // NEW: Scroll Reveal Animation
         const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
-        
+
         const scrollRevealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -2986,7 +2934,7 @@
                 }
             });
         }, { threshold: 0.1 });
-        
+
         scrollRevealElements.forEach(el => {
             scrollRevealObserver.observe(el);
         });
@@ -3015,7 +2963,7 @@
         const fabTheme = document.getElementById('fabTheme');
         fabTheme.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
-            
+
             if (document.body.classList.contains('dark-mode')) {
                 localStorage.setItem('theme', 'dark');
                 themeIcon.classList.remove('fa-moon');
@@ -3066,7 +3014,7 @@
             // Hide the install button
             installAppButton.style.display = 'none';
             pwaInstallPrompt.classList.remove('visible');
-            
+
             if (outcome === 'accepted') {
                 showToast('App installed successfully!', 'success');
             }
@@ -3084,7 +3032,7 @@
             // Hide the install button
             installAppButton.style.display = 'none';
             pwaInstallPrompt.classList.remove('visible');
-            
+
             if (outcome === 'accepted') {
                 showToast('App installed successfully!', 'success');
             }
