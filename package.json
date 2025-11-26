@@ -1,0 +1,11 @@
+{
+  "name": "imostar7-portfolio",
+  "version": "1.0.0",
+  "description": "IMOSTAR7 Graphic Design Portfolio",
+  "scripts": {
+    "build": "echo 'No build process needed for static site'"
+  },
+  "keywords": ["portfolio", "graphic-design", "pwa"],
+  "author": "IMOSTAR7",
+  "license": "MIT"
+}
