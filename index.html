@@ -26,14 +26,14 @@
     <meta name="apple-mobile-web-app-title" content="IMOSTAR7">
     <meta name="msapplication-TileColor" content="#4CAF50">
 
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
     <title>IMOSTAR7 | Graphic Designer Portfolio</title>
 
     <!-- Favicon -->
     <link rel="icon" href="IMG-20250901-WA0014.jpg">
     <link rel="apple-touch-icon" href="IMG-20250901-WA0014.jpg">
-
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIklNT1NUQVI3IERlc2lnbiBQb3J0Zm9saW8iLAogICJzaG9ydF9uYW1lIjogIklNT1NUQVI3IiwKICAiZGVzY3JpcHRpb24iOiAiR3JhcGhpYyBEZXNpZ24gUG9ydGZvbGlvIG9mIElNT1NUQVI3IiwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiM0Q0FGNTQiLAogICJ0aGVtZV9jb2xvciI6ICIjNENBRjU0IiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiSU1HLTIwMjUwOTAxLVdBMDAxNC5qcGciLAogICAgICAic2l6ZXMiOiAiMTkyeDE5MiIsCiAgICAgICJ0eXBlIjogImltYWdlL2pwZWciCiAgICB9CiAgXQp9">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -2591,7 +2591,7 @@
             retina_detect: true
         });
 
-        // Service Worker Registration
+        // Service Worker Registration for PWA
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
                 navigator.serviceWorker.register('/sw.js')
