@@ -4,7 +4,10 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build"
+      "use": "@vercel/static-build",
+      "config": {
+        "outputDirectory": "build"  // or "dist", "out", "public"
+      }
     }
   ],
   "routes": [
@@ -13,7 +16,7 @@
       "dest": "/index.html",
       "headers": {
         "X-Content-Type-Options": "nosniff",
-        "X-Frame-Options": "DENY",
+        "X-Frame-Options": "DENY", 
         "X-XSS-Protection": "1; mode=block"
       }
     }
