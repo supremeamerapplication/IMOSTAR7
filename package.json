@@ -1,11 +1,25 @@
 {
   "name": "imostar7-portfolio",
   "version": "1.0.0",
-  "description": "IMOSTAR7 Graphic Design Portfolio",
+  "description": "Professional Graphic Designer Portfolio - IMOSTAR7",
+  "type": "module",
   "scripts": {
-    "build": "echo 'No build process needed for static site'"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": ["portfolio", "graphic-design", "pwa"],
+  "keywords": [
+    "portfolio",
+    "graphic-design",
+    "pwa",
+    "responsive"
+  ],
   "author": "IMOSTAR7",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^4.4.0"
+  },
+  "dependencies": {
+    "workbox-build": "^6.6.0"
+  }
 }
