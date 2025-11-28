@@ -1,5 +1,5 @@
 {
-  "name": "IMOSTAR7 Design Portfolio",
+  "name": "IMOSTAR7 | Graphic Designer Portfolio",
   "short_name": "IMOSTAR7",
   "description": "Professional Graphic Designer Portfolio - Transform ideas into visual masterpieces",
   "start_url": "/",
@@ -7,8 +7,6 @@
   "background_color": "#4CAF50",
   "theme_color": "#4CAF50",
   "orientation": "portrait-primary",
-  "scope": "/",
-  "lang": "en",
   "icons": [
     {
       "src": "IMG-20250901-WA0014.jpg",
@@ -16,18 +14,9 @@
       "type": "image/jpeg"
     },
     {
-      "src": "IMG-20250901-WA0014.jpg",
+      "src": "IMG-20251123-WA0016.jpg",
       "sizes": "512x512",
       "type": "image/jpeg"
-    }
-  ],
-  "categories": ["design", "portfolio", "business"],
-  "screenshots": [
-    {
-      "src": "IMG-20250904-WA0040.jpg",
-      "sizes": "1280x720",
-      "type": "image/jpeg",
-      "form_factor": "wide"
     }
   ]
 }
